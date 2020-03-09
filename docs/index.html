@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=no">
+  <meta name="generator" content="made with love by dartdoc 0.29.1">
+  <meta name="description" content="console_app API docs, for the Dart programming language.">
+  <title>console_app - Dart API docs</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/github.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+  <!-- header placeholder -->
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li class="self-crumb">console_app package</li>
+  </ol>
+  <div class="self-name">console_app</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div id="dartdoc-sidebar-left" class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <header id="header-search-sidebar" class="hidden-l">
+      <form class="search-sidebar" role="search">
+        <input type="text" id="search-sidebar" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+      </form>
+    </header>
+    
+    <ol class="breadcrumbs gt-separated dark hidden-l" id="sidebar-nav">
+      <li class="self-crumb">console_app package</li>
+    </ol>
+    
+    <h5 class="hidden-xs"><span class="package-name">console_app</span> <span class="package-kind">package</span></h5>
+    <ol>
+          <li class="section-title">Libraries</li>
+          <li><a href="console_app/console_app-library.html">console_app</a></li>
+          <li><a href="web_server/web_server-library.html">web_server</a></li>
+    </ol>
+  </div>
+
+  <div id="dartdoc-main-content" class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <section class="desc markdown">
+        <h1 id="dart-learning">Dart learning</h1>
+<p>Learning about the Dart language by making some example applications in it.</p>
+<h2 id="set-up-the-project">Set up the project</h2>
+<ol>
+<li>Make sure you have Dart <a href="https://dart.dev/get-dart">installed</a></li>
+<li>Run <code>pub get</code> to download dependencies</li>
+<li>Start the console app with <code>pub run bin/console_app.dart</code>
+<ul>
+<li>Or (because the package name is <code>console_app</code>, you can just run <code>pub run console_app</code>)</li>
+<li>You can also run a dart file with <code>dart bin/console_app.dart</code></li>
+</ul>
+</li>
+</ol>
+<h2 id="key-points">Key points</h2>
+<ul>
+<li><a href="https://dart.dev/tools/pub/cmd">pub</a> is a a CLI tool for managing dependencies in Dart projects</li>
+<li><code>pubspec.yaml</code> is the <code>package.json</code> of Dart projects i.e. manifest file</li>
+<li>In order to add a dependency, you must <em>manually edit <code>pubspec.yaml</code></em> and add the package at the specified version range to the desired dependencies list</li>
+<li>Dart comes with a linter. It's configured in <code>analysis_options.yaml</code></li>
+<li>Dart is a strongly-typed language like Java or C#. There are many in-built types like <code>List&lt;T&gt;</code> or <code>Map&lt;String, int&gt;</code>. See Dart's <a href="https://dart.dev/guides/language/language-tour">Language tour</a> for details of every feature the language has (many).</li>
+<li>Dart has no <code>private</code> or <code>public</code> keywords - it instead uses a convention-based a approach. A leading underscore for private members e.g. <code>_handleError</code> will not be available outside of the file they are declared in.</li>
+<li><a href="https://pub.dev/packages/stagehand">stagehand</a> is a CLI tool for generating Dart projects</li>
+<li>Dart projects make a distinction between <a href="https://dart.dev/tools/pub/glossary#application-package">Application packages</a> and <a href="https://dart.dev/tools/pub/glossary#library-package">Library packages</a>
+<ul>
+<li>An <strong>Application package</strong> is a standalone application that you run e.g. some website you made or a CLI tool</li>
+<li>A <strong>Library package</strong> is a package to be referenced by other packages i.e. it is intended to be a dependency - it won't have any <code>main()</code> function.</li>
+</ul>
+</li>
+<li>Dart projects have a bit of a peculiar structure to them
+<ul>
+<li>"Application packages" usually still have a "Library package" where most of your code will live i.e. your package will import and use itself</li>
+<li><code>bin/</code> Your executables will live here (for Application packages mostly)</li>
+<li><code>lib/</code> The source code for your "Library" (even if you are writing an Application package)
+<ul>
+<li>This will usually contain a top-level file that represents your Library's public API - it will export all the members from within your package</li>
+<li><code>lib/src/</code> The actual source code for your package</li>
+</ul>
+</li>
+<li><code>example/</code> Examples of how to use your package</li>
+<li><code>test/</code> Tests</li>
+<li><code>doc/</code> Package documentation often generated by <a href="https://github.com/dart-lang/dartdoc">dartdoc</a></li>
+<li><code>tools/</code> For scripts and things</li>
+<li>For full details see <a href="https://dart.dev/tools/pub/package-layout">Package layout conventions</a></li>
+</ul>
+</li>
+</ul>
+      </section>
+      
+        <section class="summary">
+            <h2>Libraries</h2>
+          <dl>
+            <dt id="console_app">
+              <span class="name"><a href="console_app/console_app-library.html">console_app</a></span>             
+            </dt>
+            <dd>
+              A sample application that cats files and implements some
+basic command line flags
+            </dd>            <dt id="web_server">
+              <span class="name"><a href="web_server/web_server-library.html">web_server</a></span>             
+            </dt>
+            <dd>
+              A sample web server app
+            </dd>          </dl>
+        </section>
+
+  </div> <!-- /.main-content -->
+
+  <div id="dartdoc-sidebar-right" class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+  </div>
+
+</main>
+
+<footer>
+  <span class="no-break">
+    console_app
+      0.1.0
+  </span>
+
+  <!-- footer-text placeholder -->
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/highlight.pack.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+<!-- footer placeholder -->
+
+</body>
+
+</html>

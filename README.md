@@ -9,6 +9,7 @@ Learning about the Dart language by making some example applications in it.
 1. Start the console app with `pub run bin/console_app.dart`
     - Or (because the package name is `console_app`, you can just run `pub run console_app`)
     - You can also run a dart file with `dart bin/console_app.dart`
+1. Alternatively, you can run the web server app with `pub run bin/web_server.dart` (or `dart bin/web_server.dart`)
 
 ## Key points
 
